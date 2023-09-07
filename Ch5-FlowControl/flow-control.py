@@ -33,4 +33,7 @@ while user_input.upper() != 'Q' :
     elif user_input.upper() == 'D':
         print("Calling DELETE routine...")
         user_input = input('Enter:/n    C to create,/n  R to read,/n    U to update,/n  D to delete or/n    Q to quit ==> ')
+    else:
+        print(f'Your entry {user_input} is invalid - try again')
+        user_input = input('Enter:/n    C to create,/n  R to read,/n    U to update,/n  D to delete or/n    Q to quit ==> ')
 print("Exiting the program...")
