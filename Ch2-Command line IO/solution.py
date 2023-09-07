@@ -10,7 +10,7 @@ print()
 '''
 
 
-exit()
+# exit()
 
 # Part 2: Write a program that accepts two numbers from the command line
 # Print out their sum using an expression in an f-string
