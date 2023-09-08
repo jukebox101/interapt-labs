@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from random import randint           # To generate random integers
-
+# from random import randint           # To generate random integers
+import random
 # Find common elements for a pair of iterators
 def find_common_unique_elements( iter1, iter2 ):
     list_with_common = []
@@ -14,12 +14,12 @@ def find_common_elems_buncha_iters( buncha_iters ):
 
     # Pass first two iterables; save common elements
     # How do we access the first two elements of the buncha_iters structure?
-    common_elems = find_common_unique_elements( ??? )
+    common_elems = find_common_unique_elements()
     # Need an expression that ITERATES OVER REMAINING LISTS IN buncha_iters
 
     # In the block coded above, call find_common_unique_elements with arguments
     # common_elems and the NEXT LIST in the remaining lists in buncha_iters
-        ??? = find_common_unique_elements( common_elems, ??? )
+        #??? = find_common_unique_elements( common_elems, ??? )
 
     # When done, this has ALL the common elements
     return common_elems
@@ -30,24 +30,24 @@ def gen_return_random_num_list( num_items ) :
     #return a LIST COMPREHENSION that creates a list of
     # num_items random integers between 0 and 20
     # The expression        randint(0, 20)      generates a random #
-    return [ ????? ]
+    return [ random.randint(0, 20) for _ in range(0, num_items) ]
 
 def main( ):
     # Prompt user for num_iterators and num_each_iterator
     # Remember to coerce user input to an integer!
-    num_iterators = ???
-    num_each_iterator = ???
+    num_iterators = int(input('Enter number of lists ==> '))
+    num_each_iterator = int(input('Enter number of elements for your lists ==> '))
     # Create buncha_iterator structure
     # Use a LIST COMPREHENSION to create a LIST OF LISTS (buncha_iters)
     # Each list (element) in buncha_iters is a LIST OF RANDOM INTEGERS
     #
     # You'll need to call gen_return_random_num_list, passing num_each_iterator
     # for num_iterators times
-    buncha_iters = [ ????? ]
+    buncha_iters = [ gen_return_random_num_list( num_each_iterator ) for row in range(0, num_iterators) ]
     # Print the buncha_iters generated
     # One list per line - iterate over buuncha_items, print an element
     # Sort the 'per line' list - makes it easier to read
-
+    print
 
     # OK - let's print out the common elements - this one's a gimme
     print(f'Elements common to all lists: {find_common_elems_buncha_iters( buncha_iters )}')
