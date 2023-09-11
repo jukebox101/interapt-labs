@@ -45,9 +45,11 @@ def main( ):
     # for num_iterators times
     buncha_iters = [ gen_return_random_num_list( num_each_iterator ) for row in range(0, num_iterators) ]
     # Print the buncha_iters generated
+    print(buncha_iters)    
     # One list per line - iterate over buuncha_items, print an element
+    [print(list) for list in buncha_iters]
     # Sort the 'per line' list - makes it easier to read
-    print
+
 
     # OK - let's print out the common elements - this one's a gimme
     print(f'Elements common to all lists: {find_common_elems_buncha_iters( buncha_iters )}')
