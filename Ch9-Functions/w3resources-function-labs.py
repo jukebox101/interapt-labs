@@ -130,9 +130,21 @@ def find_even_nums (num_list):
 # print(find_even_nums([2,3,4,5,6,2,3,4]))
 
 # 11. Write a Python function to check whether a number is "Perfect" or not.
-# According to Wikipedia : In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself (also known as its aliquot sum). Equivalently, a perfect number is a number that is half the sum of all of its positive divisors (including itself).
-# Example : The first perfect number is 6, because 1, 2, and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. Equivalently, the number 6 is equal to half the sum of all its positive divisors: ( 1 + 2 + 3 + 6 ) / 2 = 6. The next perfect number is 28 = 1 + 2 + 4 + 7 + 14. This is followed by the perfect numbers 496 and 8128.
-# Click me to see the sample solution
+# According to Wikipedia : In number theory, a perfect number is a positive integer that is equal 
+# to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding 
+# the number itself (also known as its aliquot sum). Equivalently, a perfect number is a number 
+# that is half the sum of all of its positive divisors (including itself).
+# Example : The first perfect number is 6, because 1, 2, and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. 
+# Equivalently, the number 6 is equal to half the sum of all its positive divisors: ( 1 + 2 + 3 + 6 ) / 2 = 6. 
+# The next perfect number is 28 = 1 + 2 + 4 + 7 + 14. This is followed by the perfect numbers 496 and 8128.
+
+# def find_divisors (num):
+#     divisor_list = [1]
+#     for i in range(1,num+1):
+#         if num % i != 1:
+#             print(num/i)
+
+# find_divisors(6)
 
 # 12. Write a Python function that checks whether a passed string is a palindrome or not.
 # Note: A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
@@ -152,7 +164,8 @@ def find_even_nums (num_list):
 # For example : "The quick brown fox jumps over the lazy dog"
 # Click me to see the sample solution
 
-# 15. Write a Python program that accepts a hyphen-separated sequence of words as input and prints the words in a hyphen-separated sequence after sorting them alphabetically.
+# 15. Write a Python program that accepts a hyphen-separated sequence of words as input 
+# and prints the words in a hyphen-separated sequence after sorting them alphabetically.
 # Sample Items : green-red-yellow-black-white
 # Expected Result : black-green-red-white-yellow
 # Click me to see the sample solution
