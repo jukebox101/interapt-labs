@@ -12,11 +12,18 @@ def enter_integer_in_range( prompt, low, high ):
             raise Exception("Input out of range")
 
 def enter_an_integer( prompt ):
-    user_input = input(f'{prompt} ==> ')
+    while True:
+        try:
+            user_input = int(input(f'{prompt} ==> '))
+            return user_input
+        except ValueError:          # except Exception
+            print("Value is not an int. Try again")
 
-    
-
-    return prompt
 
 def enter_a_float(prompt):
-    return prompt
+    while True:
+        try:
+            user_input = float(input(f'{prompt} ==> '))
+            return user_input
+        except ValueError:          # except Exception
+            print("Value is not an float. Try again")
