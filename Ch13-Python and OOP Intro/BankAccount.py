@@ -37,9 +37,9 @@ class BankAccount:
             target_acctID._balance += transfer_amount
             self._balance -= transfer_amount
         else:
-            print(f'Sorry you are unable to transfer funds')
+            print(f'Sorry you are unable to transfer funds.\nThe account holders of the two accounts must be the same\nand the transfer must not result in a negative balance. ')
     
     def print_acct_info(self):
-        print(f' Account ID: {self._acctID}\n Account Holder: {self._acct_holder}\n Date opened: {self._date_opened}\n Account Balance: {self._balance}')
+        print(f'Account ID: {self._acctID}\nAccount Holder: {self._acct_holder}\nDate opened: {self._date_opened}\nAccount Balance: {self._balance}')
 
     
